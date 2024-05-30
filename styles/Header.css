@@ -1,0 +1,140 @@
+.Header {
+  height: 55px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  border-bottom: 1px solid rgb(228,228,228);
+  z-index: 1;
+}
+.left-section {
+  align-items: center;
+  display: flex;
+  height: 24px;
+}
+.yt-list {
+  height: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
+  cursor: pointer;
+}
+.yt-Logo {
+  height: 20px;
+  cursor: pointer;
+}
+.middle-section {
+  flex: 1;
+  margin-left: 70px;
+  /* margin-right: 35px; */
+  max-width: 500px;
+  display: flex;
+  align-items: center;
+}
+.search {
+  height: 36px;
+  flex: 1;
+  padding-left: 10px;
+  font-size: 16px;
+  border: 1px solid rgb(192, 192, 192);
+  border-radius: 2px;
+  box-shadow: inset 1px 2px 3px rgba(0, 0, 0, 0.05);
+  width: 0;
+  cursor:text;
+}
+.search::placeholder {
+  font-family: Roboto, Arial;
+  font-size: 16px;
+}
+.search-button {
+    position: relative;
+  height: 40px;
+  width: 66px;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid rgb(192, 192, 192);
+  margin-left: -1px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.search-button .tooltip{
+    position: absolute;
+    background-color: rgb(41, 40, 40);
+    color: white;
+    padding: 4px 8px 4px 8px;
+    border-radius: 3px;
+    font-size: 12px;
+    bottom: -30px;
+    opacity: 0;
+    transition: opacity, 0.15s;
+    pointer-events: none;
+}
+.search-button:hover .tooltip{
+    opacity: 1;
+}
+.search-button-icon {
+  height: 25px;
+  margin-top: 4px;
+  
+}
+.voice-search {
+  height: 40px;
+  width: 40px;
+  border-radius: 100%;
+  border: none;
+  background-color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+.voice-search-icon {
+  height: 24px;
+  margin-top: 4px;
+}
+.right-section {
+  margin-left: 29px;
+  margin-right: 20px;
+  display: flex;
+  width: 180px;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+}
+.upload {
+  height: 24px;
+  cursor: pointer;
+}
+.apps {
+  height: 24px;
+  cursor: pointer;
+}
+.notification {
+  height: 24px;
+  cursor: pointer;
+}
+.my_channel {
+  height: 32px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.notifi{
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    
+}
+.cnt{
+    font-family: Roboto,Arial;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    background-color: rgb(174, 7, 7);
+    color: white;
+    top:-2px;
+    right: -5px;
+    border-radius: 100%;
+    font-size: 12px;
+    padding: 2px 5px 2px 5px ;
+
+}
